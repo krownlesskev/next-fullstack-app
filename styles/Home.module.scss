@@ -18,3 +18,45 @@
   }
 }
 
+.contentContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.signIn {
+  position: absolute;
+  top: 30%;
+  background-color: #a231ff;
+  border: none;
+  border-radius: 20px;
+  width: 100px;
+  height: 30px;
+  transition: .3s;
+  color: #ffffff;
+  font-size: 14px;
+
+  &:hover{
+      transform: scale(1.15);
+      transform: .3s;
+      cursor: pointer;
+      box-shadow: 0 0 30px #fff;
+  }
+}
+
+.title {
+  color: #ffffff;
+  position: relative;
+  top: 10%;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+}
+
+.subtitle {
+  color: #ffffff;
+  font-family: 'Pacifico', cursive;
+  font-size: 35px;
+}
+

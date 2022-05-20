@@ -1,20 +1,15 @@
-import { signInUser, signOutUser } from '../../pages/api/firebase-config';
 import styles from '../../styles/UserBar.module.scss';
+import { signOutUser } from '../../pages/api/firebase-config';
+
 
 const UserBar = ({ user }) => {
     return (
         <div className={styles.container}>
-            {user ?
-                <div className={styles.usernameContainer}>
-                    <img className={styles.profilePic} src={user.photoURL} alt="" />
-                    <p className={styles.username}>{user.displayName}</p>
-                </div>
-                : null
-            }
-            {!user ?
-                <button className={styles.signIn} onClick={signInUser}>Sign In</button>
-                : <button className={styles.signOut} onClick={signOutUser}>Sign Out</button>
-            }
+            <div className={styles.usernameContainer}>
+                <img className={styles.profilePic} src={user.photoURL} alt="" />
+                <p className={styles.username}>{user.displayName}</p>
+            </div>
+            <button className={styles.signOut} onClick={signOutUser}>Sign Out</button>
         </div>
     );
 };

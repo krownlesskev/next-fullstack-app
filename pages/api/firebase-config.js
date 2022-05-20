@@ -24,7 +24,7 @@ export const auth = getAuth(app);
 export const signInUser = async () => {
   // Sign in firebase using a popup auth and google as the provider
   const provider = new GoogleAuthProvider();
-  await signInWithPopup(auth, provider);
+  await signInWithPopup(auth, provider)
 };
 
 // Signs out of the app
