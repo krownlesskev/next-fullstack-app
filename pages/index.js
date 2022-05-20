@@ -3,7 +3,7 @@ import UserBar from '../components/userBar/UserBar';
 import { useState } from 'react';
 import { authStateListener } from './api/firebase-config';
 
-import styles from '../styles/Home.module.css';
+import styles from '../styles/Home.module.scss';
 
 export default function Home() {
   const [user, setUser] = useState();
@@ -19,7 +19,6 @@ export default function Home() {
       </Head>
       <div className={styles.appContainer}>
         <UserBar user={user} />
-
       </div>
     </div>
   );

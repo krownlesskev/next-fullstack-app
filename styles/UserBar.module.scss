@@ -1,7 +1,8 @@
 .container {
     margin-top: 1rem;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .usernameContainer {
@@ -17,6 +18,7 @@
 
 .username {
     margin: 0 1rem;
+    font-size: 18px;
     color: #ffffff;
 }
 
@@ -29,6 +31,7 @@
     height: 30px;
     transition: .3s;
     color: #ffffff;
+    font-size: 14px;
 
     &:hover{
         transform: scale(1.1);
@@ -45,6 +48,7 @@
     height: 30px;
     transition: .3s;
     color: #ffffff;
+    font-size: 14px;
 
     &:hover{
         transform: scale(1.1);
