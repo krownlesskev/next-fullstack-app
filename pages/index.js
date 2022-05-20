@@ -1,17 +1,14 @@
 import Head from 'next/head';
 import UserBar from '../components/userBar/UserBar';
 import { useState } from 'react';
-import { onAuthStateChanged } from 'firebase/auth';
-import { auth } from './api/firebase-config';
+import { authStateListener } from './api/firebase-config';
 
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   const [user, setUser] = useState();
+  authStateListener(setUser);
 
-  onAuthStateChanged(auth, (currentUser) => {
-    setUser(currentUser);
-  });
 
   return (
     <div className={styles.container}>

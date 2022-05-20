@@ -32,3 +32,10 @@ export const signOutUser = async () => {
   // Sign out of firebase
   signOut(auth);
 };
+
+// Listens for Auth State change and sets the current user to state
+export const authStateListener = (setUser) => {
+  onAuthStateChanged(auth, (currentUser) => {
+    setUser(currentUser);
+  });
+};
