@@ -10,6 +10,6 @@ In this project I combine several of firebase's products to develop a fullstack 
 
 `3.` Certain components will reveal themselves to the user once they are logged in. &radic;
 
-`4.` User can leave messages/status updates.
+`4.` User can leave messages/status updates. `WIP`
 
-`5.` User can upload and post images.
+`5.` User can upload and post images. `WIP`
