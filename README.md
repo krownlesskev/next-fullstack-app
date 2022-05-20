@@ -4,7 +4,7 @@ In this project I combine several of firebase's products to develop a fullstack 
 
 ## User Stories
 
-`1.` User can sign in through google authentication.
+`1.` User can sign in through google authentication. &radic;
 
 `2.` User can sign out.
 
