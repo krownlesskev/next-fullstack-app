@@ -12,8 +12,8 @@ const UserBar = ({ user }) => {
                 : null
             }
             {!user ?
-                <button onClick={signInUser}>Sign In</button>
-                : <button onClick={signOutUser}>Sign Out</button>
+                <button className={styles.signIn} onClick={signInUser}>Sign In</button>
+                : <button className={styles.signOut} onClick={signOutUser}>Sign Out</button>
             }
         </div>
     );

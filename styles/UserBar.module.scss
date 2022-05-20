@@ -1,12 +1,13 @@
 .container {
-    border: 1px solid red;
+    margin-top: 1rem;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 .usernameContainer {
     display: flex;
     align-items: center;
+    transition: .3s;
 }
 
 .profilePic {
@@ -16,4 +17,39 @@
 
 .username {
     margin: 0 1rem;
+    color: #ffffff;
+}
+
+
+.signIn {
+    background-color: #b760ff;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    transition: .3s;
+    color: #ffffff;
+
+    &:hover{
+        transform: scale(1.1);
+        transform: .3s;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+    }
+}
+.signOut {
+    background-color: #b760ff;
+    border: none;
+    border-radius: 20px;
+    width: 100px;
+    height: 30px;
+    transition: .3s;
+    color: #ffffff;
+
+    &:hover{
+        transform: scale(1.1);
+        transform: .3s;
+        border: 2px solid #ffffff;
+        cursor: pointer;
+    }
 }
