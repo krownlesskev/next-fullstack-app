@@ -1,0 +1,19 @@
+.container {
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.usernameContainer {
+    display: flex;
+    align-items: center;
+}
+
+.profilePic {
+    height: 50px;
+    border-radius: 30px;
+}
+
+.username {
+    margin: 0 1rem;
+}

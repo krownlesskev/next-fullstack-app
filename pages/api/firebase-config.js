@@ -6,25 +6,6 @@ import {
   signInWithPopup,
   signOut
 } from "firebase/auth";
-import {
-  getFirestore,
-  collection,
-  addDoc,
-  query,
-  orderBy,
-  limit,
-  onSnapshot,
-  setDoc,
-  updateDoc,
-  doc,
-  serverTimestamp,
-} from "firebase/firestore";
-import {
-  getStorage,
-  ref,
-  uploadBytesResumable,
-  getDownloadURL,
-} from "firebase/storage";
 
 
 const firebaseConfig = {
@@ -37,3 +18,17 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+
+// Signs in to the app
+export const signInUser = async () => {
+  // Sign in firebase using a popup auth and google as the provider
+  const provider = new GoogleAuthProvider();
+  await signInWithPopup(auth, provider);
+};
+
+// Signs out of the app
+export const signOutUser = async () => {
+  // Sign out of firebase
+  signOut(auth);
+};
